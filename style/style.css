@@ -62,12 +62,21 @@ main a:hover {
 body {
     background-color: #c5ebd6;
     font-family: var(--fonte-padrao);
+
+    overflow-x: hidden;
 }
 
 header {
     background-image: linear-gradient(to bottom, var(--cor2), var(--cor5));
     min-height: 150px;
     padding-top: 40px;
+
+    display: flex;
+    flex-direction: column;
+
+    width: 100vw;
+
+    align-items: center;
 }
 
 header > h1 {
@@ -95,6 +104,9 @@ nav {
     background-color: var(--cor5);
     padding: 10px;
     box-shadow: 0px 7px 9px rgba(0, 0, 0, 0.207);
+
+    width: 100vw;
+    text-align: center;
 }
 
 nav > a {
@@ -162,11 +174,27 @@ aside > h3 {
 }
 
 footer {
-    background-color: var(--cor6);
-    color: white;
+    background-color: var(--cor5);
+    color: rgb(255, 255, 255);
     text-align: center;
-    font-size: 0.8em;
+    font-size: 1em;
     padding: 5px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+footer > p {
+    padding: 10px;
+    width: 100vw;
+
+    font-size: 1.5em;
+}
+
+footer > p > a {
+    text-decoration: none;
+    color: rgb(0, 255, 221);
+    cursor: pointer;
 }
 
 .pequena {
@@ -190,5 +218,3 @@ footer {
     width: 90%;
     height: 90%;
 }
-
-.video:em
